@@ -1,0 +1,24 @@
+simulation:
+  duration: 1000.0
+  random_seed: 42
+
+areas:
+  M: 4
+
+servers:
+  N: 3
+  access_bandwidth: [100, 150, 120]
+
+flow_classes:
+  J: 3
+  arrival_rates: [2.0, 1.5, 1.0]
+  service_rates: [0.5, 0.3, 0.4]
+  bitrates: [10, 15, 20]
+  max_flows_per_server:
+    - [5, 4, 3]
+    - [6, 5, 4]
+    - [5, 5, 5]
+
+admission_policy:
+  type: "simple_heuristic"
+  utility_threshold: 0.1

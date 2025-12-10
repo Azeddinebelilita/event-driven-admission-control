@@ -1,0 +1,6 @@
+__pycache__/
+*.pdf
+*.csv
+*.png
+.pytest_cache/
+.coverage
